@@ -1,0 +1,24 @@
+* {
+    font-family: Roboto, sans-serif;
+}
+.wrapper {
+    margin: 1%;
+}
+h4 {
+    font-size: 22px;
+    color: #1E1E1E;
+}
+
+.input_region input, .input_region select, .input_region textarea, .input_region label {
+    display: block;
+    padding-left: 20px;
+}
+.input_region {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 4px solid #3F97EF;
+}
+
+.input_region .noShow {
+    display: none;
+}
