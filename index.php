@@ -5,6 +5,8 @@
     <title>Recipe Maintenance</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app/scripts.js" charset="utf-8"></script>
 </head>
     <body>
         <section class="heading"><h1 id="recipe_name"></h1></section>
@@ -13,13 +15,13 @@
         ?>
         <section class="input_region" id="recipe">
             <h4>Recipe name</h4>
-            <form action="includes/writeto.inc.php" method="post">
+            <form  method="post">
                 <label for="name">Enter recipe name:</label>
                 <input type="text" name="name" placeholder="enter text" maxlength="200">
                 <input type="text" name="tablename" class="noShow" value="recipes" >
                 <input type="text" name="pageOrigin" class="noShow" value="<?php echo basename(__FILE__); ?>">
                 <br>
-                <button type="submit" name="submit">add to db</button>
+                <button type="submit" name="submit" id="butsave">add to db</button>
             </form>
         </section>
         <section class="input_region" id="recipe_ingredients">
@@ -70,7 +72,7 @@
                 <input type="text" name="tablename" class="noShow" value="recipe_ingredients">
                 <input type="text" name="pageOrigin" class="noShow" value="<?php echo basename(__FILE__); ?>">
                 <br>
-                <button type="submit" name="submit">add to db</button>
+                <button type="submit" name="submit" >add to db</button>
             </form>
         </section>
         <section class="input_region" id="recipe_steps">
@@ -104,6 +106,6 @@
                 <button type="submit" name="submit">add to db</button>
             </form>
         </section>
-        <script src="app/scripts.js" charset="utf-8"></script>
+        
     </body>
 </html>
